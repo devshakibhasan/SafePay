@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePay</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="download-app">
+            <a href="">
+                <p>Download the app</p> <img src="https://safepaytm.com/images/google-play-badge.svg" alt="">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg fixed">
+            <div class="container">
+                <a class="navbar-brand Logo" href="#"><img src="https://i.ibb.co/NjhzpJz/logo.png" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Exchange</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Tracking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">FAQ's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link help" href="#">Help</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="sign-btn ps-5 pe-5 btn" type="submit">Sign in</button>
+                        <button class=" reg-btn ps-5 pe-5 btn" type="submit">Register</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="hiden">sdfasdkfjasldk;f;fj</h1>
+        <section class="top-section ">
+            <div class="container">
+                <div class="row">
+                    <div class="col left-content">
+                        <h3>Automatic Buy and Sell eCurrency</h3>
+                        <h5>Instant and secure way to purchase or exchange ecurrencies</h5>
+                    </div>
+                    <div class="col right-content ">
+                        <img src="https://safepaytm.com/images/3075750.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row" id="sf_exchange_box">
+                    <div class="col-xl-12 col-md-12 py-md-12 form_box">
+
+
+                        <form id="sf_exchange_form">
+                            <div class="card">
+                                <div class="card-body pl-0 pr-0">
+                                    <div class="fix_button text-center" id="sf_exchange_results"></div>
+                                    <div class="buy-sell-widget">
+                                        <div class="row">
+                                            <div class="col-sm-4 side left_side">
+                                                <div class="row">
+                                                    <div class="col-sm-12 side">
+                                                        <div class="w-100 select_setting">
+                                                            <div class="w-100">
+                                                                <div>
+                                                                    <h3 class="float-left"><img
+                                                                            src="https://safepaytm.com/uploads/1556906532_icon.png"
+                                                                            id="sf_image_send"> </h3>
+                                                                </div>
+                                                                <!-- id="sf_gateway_send" -->
+                                                                <select class="float-right" name="sf_gateway_send"
+                                                                    onchange="sf_refresh('1');" id="currency-one">
+
+                                                                    <!-- <option value="15" selected="">Mobile Banking BDT
+                                                                    </option>
+                                                                    <option value="44">UPI INR</option>
+                                                                    <option value="18">Perfect Money USD</option>
+                                                                    <option value="25">Payeer USD</option>
+                                                                    <option value="9">AdvCash USD</option>
+                                                                    <option value="45">Tether TRC20 USDT</option>
+                                                                    <option value="48">USD Coin (TRC20) USDC</option>
+                                                                    <option value="46">TRON TRX</option>
+                                                                    <option value="30">BTC USD</option>
+                                                                    <option value="33">LTC USD</option> -->
+                                                                    <option value="AED">AED</option>
+                                                                    <option value="ARS">ARS</option>
+                                                                    <option value="AUD">AUD</option>
+                                                                    <option value="BGN">BGN</option>
+                                                                    <option value="BRL" selected>BRL</option>
+                                                                    <option value="BSD">BSD</option>
+                                                                    <option value="CAD">CAD</option>
+                                                                    <option value="CHF">CHF</option>
+                                                                    <option value="CLP">CLP</option>
+                                                                    <option value="CNY">CNY</option>
+                                                                    <option value="COP">COP</option>
+                                                                    <option value="CZK">CZK</option>
+                                                                    <option value="DKK">DKK</option>
+                                                                    <option value="DOP">DOP</option>
+                                                                    <option value="EGP">EGP</option>
+                                                                    <option value="EUR">EUR</option>
+                                                                    <option value="FJD">FJD</option>
+                                                                    <option value="GBP">GBP</option>
+                                                                    <option value="GTQ">GTQ</option>
+                                                                    <option value="HKD">HKD</option>
+                                                                    <option value="HRK">HRK</option>
+                                                                    <option value="HUF">HUF</option>
+                                                                    <option value="IDR">IDR</option>
+                                                                    <option value="ILS">ILS</option>
+                                                                    <option value="INR">INR</option>
+                                                                    <option value="ISK">ISK</option>
+                                                                    <option value="JPY">JPY</option>
+                                                                    <option value="KRW">KRW</option>
+                                                                    <option value="KZT">KZT</option>
+                                                                    <option value="MXN">MXN</option>
+                                                                    <option value="MYR">MYR</option>
+                                                                    <option value="NOK">NOK</option>
+                                                                    <option value="NZD">NZD</option>
+                                                                    <option value="PAB">PAB</option>
+                                                                    <option value="PEN">PEN</option>
+                                                                    <option value="PHP">PHP</option>
+                                                                    <option value="PKR">PKR</option>
+                                                                    <option value="PLN">PLN</option>
+                                                                    <option value="PYG">PYG</option>
+                                                                    <option value="RON">RON</option>
+                                                                    <option value="RUB">RUB</option>
+                                                                    <option value="SAR">SAR</option>
+                                                                    <option value="SEK">SEK</option>
+                                                                    <option value="SGD">SGD</option>
+                                                                    <option value="THB">THB</option>
+                                                                    <option value="TRY">TRY</option>
+                                                                    <option value="TWD">TWD</option>
+                                                                    <option value="UAH">UAH</option>
+                                                                    <option value="USD">USD</option>
+                                                                    <option value="UYU">UYU</option>
+                                                                    <option value="VND">VND</option>
+                                                                    <option value="ZAR">ZAR</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="amount_box">
+
+                                                    <div class="row">
+                                                        <div class="col-sm-5 side fixleft_side ">
+                                                            <p id="country"></p>
+                                                        </div>
+                                                        <div class="col-sm-7 side right_input_new">
+
+                                                            <!-- <input type="number" class="amount-field" placeholder="0.00" id="sf_amount_send" name="sf_amount_send" onwheel="sf_calculator()" onkeyup="sf_calculator();" onkeydown="sf_calculator();"> -->
+                                                            <input type="number" class="amount-field" placeholder="0.00"
+                                                                name="" id="amount-one" value="1">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 side fix_center_border">
+                                                <div class="buy_sell">
+
+                                                    <p id="ex_fee">৳ 29.99</p>
+                                                    <p id="valorExibicao"></p>
+                                                    <p style="font-size:10px" id="ex_fee1">Fee : 0%</p>
+                                                    <p style="font-size:15px" id="ex_type">Automatically</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 side last_fix_border">
+                                                <div class="row">
+                                                    <div class="col-sm-12 side">
+                                                        <div class="w-100 select_setting">
+                                                            <div class="w-100">
+                                                                <div>
+                                                                    <h3 class="float-left"><img
+                                                                            src="https://safepaytm.com/assets/icons/PerfectMoney.png"
+                                                                            id="sf_image_receive"> </h3>
+                                                                </div>
+
+
+                                                                <select class="float-right" id="currency-two">
+
+
+                                                                    <option value="AED">AED</option>
+                                                                    <option value="ARS">ARS</option>
+                                                                    <option value="AUD">AUD</option>
+                                                                    <option value="BGN">BGN</option>
+                                                                    <option value="BRL">BRL</option>
+                                                                    <option value="BSD">BSD</option>
+                                                                    <option value="CAD">CAD</option>
+                                                                    <option value="CHF">CHF</option>
+                                                                    <option value="CLP">CLP</option>
+                                                                    <option value="CNY">CNY</option>
+                                                                    <option value="COP">COP</option>
+                                                                    <option value="CZK">CZK</option>
+                                                                    <option value="DKK">DKK</option>
+                                                                    <option value="DOP">DOP</option>
+                                                                    <option value="EGP">EGP</option>
+                                                                    <option value="EUR">EUR</option>
+                                                                    <option value="FJD">FJD</option>
+                                                                    <option value="GBP">GBP</option>
+                                                                    <option value="GTQ">GTQ</option>
+                                                                    <option value="HKD">HKD</option>
+                                                                    <option value="HRK">HRK</option>
+                                                                    <option value="HUF">HUF</option>
+                                                                    <option value="IDR">IDR</option>
+                                                                    <option value="ILS">ILS</option>
+                                                                    <option value="INR">INR</option>
+                                                                    <option value="ISK">ISK</option>
+                                                                    <option value="JPY">JPY</option>
+                                                                    <option value="KRW">KRW</option>
+                                                                    <option value="KZT">KZT</option>
+                                                                    <option value="MXN">MXN</option>
+                                                                    <option value="MYR">MYR</option>
+                                                                    <option value="NOK">NOK</option>
+                                                                    <option value="NZD">NZD</option>
+                                                                    <option value="PAB">PAB</option>
+                                                                    <option value="PEN">PEN</option>
+                                                                    <option value="PHP">PHP</option>
+                                                                    <option value="PKR">PKR</option>
+                                                                    <option value="PLN">PLN</option>
+                                                                    <option value="PYG">PYG</option>
+                                                                    <option value="RON">RON</option>
+                                                                    <option value="RUB">RUB</option>
+                                                                    <option value="SAR">SAR</option>
+                                                                    <option value="SEK">SEK</option>
+                                                                    <option value="SGD">SGD</option>
+                                                                    <option value="THB">THB</option>
+                                                                    <option value="TRY">TRY</option>
+                                                                    <option value="TWD">TWD</option>
+                                                                    <option value="UAH">UAH</option>
+                                                                    <option value="USD" selected>USD</option>
+                                                                    <option value="UYU">UYU</option>
+                                                                    <option value="VND">VND</option>
+                                                                    <option value="ZAR">ZAR</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="amount_box">
+                                                    <div class="row">
+                                                        <div class="col-sm-2 side fixleft_side">
+                                                            <p id="country2">USD</p>
+                                                        </div>
+                                                        <div class="col-sm-10 side right_input_new">
+
+                                                            <input type="number" class="amount-field" placeholder="0.00"
+                                                                id="amount-two">
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="need_more_btn">
+                                            <p>Current reserve <span id="sf_reserve" id="taxa">721.75 USD</span> <button
+                                                    type="button" class="waves-effect">Need More?</button></p>
+                                        </div>
+
+                                        <div class="fix_button text-center">
+
+                                            <button type="button" style="border-radius:2em 1em;"
+                                                class="btn btn-success btn-block waves-effect"><i
+                                                    class="fa fa-refresh"></i> Exchange</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="swap-rate">
+                    <button id="swap" class="swap_btn">swap</button>
+                    <div id="rate" class="text-white"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="status-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <table class="Pending">
+                            <div class="heading">
+                                <h5> Pending Exchanges</h5>
+                            </div>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Send</th>
+                                    <th scope="col"> Receive</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <table class="Completed">
+                            <div class="heading">
+                                <h5> Pending Exchanges</h5>
+                            </div>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Send</th>
+                                    <th scope="col"> Receive</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <table class="Pending">
+                            <div class="heading">
+                                <h5> Our reserve
+                                </h5>
+                            </div>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Send</th>
+                                    <th scope="col"> Receive</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Account">Mobile Banking</td>
+                                    <td data-label="Receive">BTC</td>
+                                    <td data-label="Amount">2,310.00 BDT (22.00 USD)</td>
+                                    <td data-label="Period">
+                                        <div class='waiting'> Waiting....</div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class=" Logo" href="#"><img src="https://i.ibb.co/NjhzpJz/logo.png" alt="logo" /></a>
+                    <p>We don’t just exchange digital currency—we help you join the decentralized revolution.</p>
+                    <img src="https://safepaytm.com/images/dmca_protected_sml_120am.png" alt="">
+                </div>
+                <div class="col">
+                    <h5>SAFEPAYTM</h5>
+                    <ul>
+                        <li>
+                            <a href="">Exchange</a>
+                        </li>
+                        <li>
+                            <a href="">Tracking</a>
+                        </li>
+                        <li>
+                            <a href="">Rates</a>
+                        </li>
+                        <li>
+                            <a href="">Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col policy">
+                    <h5>POLICIES</h5>
+                    <ul>
+            
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Refund Policy</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>SOCAL NETWORK</h5>
+                    <img src="https://safepaytm.com/images/GooglePlay.png" alt="" class="g-play">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/money.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+
+</html>
