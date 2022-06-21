@@ -236,7 +236,7 @@ main .hiden {
     transform: rotate(135deg);
 }
 
-.select_courency {
+.select_setting {
     border: 1px solid #ccc;
     padding: 2px 7px 0;
     border-radius: 0px;
@@ -246,13 +246,13 @@ main .hiden {
     position: relative;
 }
 
-.select_courency h3 {
+.select_setting h3 {
     color: #33333382;
     padding-top: 0;
     font-size: 16px;
 }
 
-.select_courency img {
+.select_setting img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -265,7 +265,7 @@ main .hiden {
     object-fit: contain;
 }
 
-.select_courency select {
+.select_setting select {
     width: 78%;
     background: transparent;
     border: none;
@@ -285,11 +285,11 @@ option {
     flex: 88%;
 }
 
-._left_side {
+.fixleft_side {
     max-width: 11.9%;
 }
 
-.amount_tab input {
+.amount_box input {
     height: 43px;
     padding: 0 14px;
     width: 100%;
@@ -297,7 +297,7 @@ option {
     margin: 0 0 0px;
 }
 
-.mid_border {
+.fix_center_border {
     margin: 0px 67px !important;
     border: 100px solid #3333;
     border-right: 0;
@@ -308,7 +308,7 @@ option {
     /* background-image: linear-gradient(to right, #f1bb41 0%, #fdc800 51%, #dca52a 100%); */
 }
 
-.mid_border:before {
+.fix_center_border:before {
     content: '';
     height: 84px;
     width: 85px;
@@ -335,7 +335,7 @@ option {
     font-size: 28px;
 }
 
-.mid_border:after {
+.fix_center_border:after {
     content: '';
     height: 84px;
     width: 85px;
@@ -362,7 +362,7 @@ option {
     transform: rotate(135deg);
 }
 
-.select_courency {
+.select_setting {
     border: 1px solid #ccc;
     padding: 2px 7px 0;
     border-radius: 0px;
@@ -372,13 +372,13 @@ option {
     position: relative;
 }
 
-.select_courency h3 {
+.select_setting h3 {
     color: #33333382;
     padding-top: 0;
     font-size: 16px;
 }
 
-.select_courency img {
+.select_setting img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -391,11 +391,11 @@ option {
     object-fit: contain;
 }
 
-._left_side {
+.fixleft_side {
     max-width: 16.9%;
 }
 
-.amount_tab p {
+.amount_box p {
     margin: 0;
     color: #000;
     padding: 1px 4px 9px;
@@ -410,7 +410,7 @@ option {
     flex: 88%;
 }
 
-.amount_tab input {
+.amount_box input {
     height: 43px;
     padding: 0 14px;
     width: 100%;
@@ -418,18 +418,18 @@ option {
     margin: 0 0 0px;
 }
 
-.more_btn {
+.need_more_btn {
     position: absolute;
     right: 0;
     margin: 11px 0 0;
 }
 
-.more_btn p {
+.need_more_btn p {
     color: #fff;
     font-size: 14px;
 }
 
-.mid_border {
+.fix_center_border {
     margin: 0px 67px !important;
     border: 1px solid rgba(143, 38, 38, 0.2);
     border-right: 0;
@@ -441,7 +441,7 @@ option {
     /* background-image: linear-gradient(to right, #f1bb41 0%, #fdc800 51%, #dca52a 100%); */
 }
 
-.mid_border:before {
+.fix_center_border:before {
     content: '';
     height: 84px;
     width: 85px;
@@ -489,7 +489,7 @@ option {
     transform: rotate(135deg);
 }
 
-.select_courency img {
+.select_setting img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -502,7 +502,7 @@ option {
     object-fit: contain;
 }
 
-.more_btn p button {
+.need_more_btn p button {
     background: #fff;
     color: #0d75e5;
     border: none;
@@ -535,18 +535,18 @@ option {
     bottom: 0;
 }
 
-.more_btn {
+.need_more_btn {
     position: absolute;
     right: 0;
     margin: 11px 0 0;
 }
 
-.more_btn p {
+.need_more_btn p {
     color: #fff;
     font-size: 14px;
 }
 
-.more_btn p button {
+.need_more_btn p button {
     background: #fff;
     color: #0d75e5;
     border: none;
