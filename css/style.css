@@ -236,7 +236,7 @@ main .hiden {
     transform: rotate(135deg);
 }
 
-.select_setting {
+.select_courency {
     border: 1px solid #ccc;
     padding: 2px 7px 0;
     border-radius: 0px;
@@ -246,13 +246,13 @@ main .hiden {
     position: relative;
 }
 
-.select_setting h3 {
+.select_courency h3 {
     color: #33333382;
     padding-top: 0;
     font-size: 16px;
 }
 
-.select_setting img {
+.select_courency img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -265,7 +265,7 @@ main .hiden {
     object-fit: contain;
 }
 
-.select_setting select {
+.select_courency select {
     width: 78%;
     background: transparent;
     border: none;
@@ -285,7 +285,7 @@ option {
     flex: 88%;
 }
 
-.fixleft_side {
+._left_side {
     max-width: 11.9%;
 }
 
@@ -297,7 +297,7 @@ option {
     margin: 0 0 0px;
 }
 
-.fix_center_border {
+.mid_border {
     margin: 0px 67px !important;
     border: 100px solid #3333;
     border-right: 0;
@@ -308,7 +308,7 @@ option {
     /* background-image: linear-gradient(to right, #f1bb41 0%, #fdc800 51%, #dca52a 100%); */
 }
 
-.fix_center_border:before {
+.mid_border:before {
     content: '';
     height: 84px;
     width: 85px;
@@ -335,7 +335,7 @@ option {
     font-size: 28px;
 }
 
-.fix_center_border:after {
+.mid_border:after {
     content: '';
     height: 84px;
     width: 85px;
@@ -362,7 +362,7 @@ option {
     transform: rotate(135deg);
 }
 
-.select_setting {
+.select_courency {
     border: 1px solid #ccc;
     padding: 2px 7px 0;
     border-radius: 0px;
@@ -372,13 +372,13 @@ option {
     position: relative;
 }
 
-.select_setting h3 {
+.select_courency h3 {
     color: #33333382;
     padding-top: 0;
     font-size: 16px;
 }
 
-.select_setting img {
+.select_courency img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -391,7 +391,7 @@ option {
     object-fit: contain;
 }
 
-.fixleft_side {
+._left_side {
     max-width: 16.9%;
 }
 
@@ -418,18 +418,18 @@ option {
     margin: 0 0 0px;
 }
 
-.need_more_btn {
+.more_btn {
     position: absolute;
     right: 0;
     margin: 11px 0 0;
 }
 
-.need_more_btn p {
+.more_btn p {
     color: #fff;
     font-size: 14px;
 }
 
-.fix_center_border {
+.mid_border {
     margin: 0px 67px !important;
     border: 1px solid rgba(143, 38, 38, 0.2);
     border-right: 0;
@@ -441,7 +441,7 @@ option {
     /* background-image: linear-gradient(to right, #f1bb41 0%, #fdc800 51%, #dca52a 100%); */
 }
 
-.fix_center_border:before {
+.mid_border:before {
     content: '';
     height: 84px;
     width: 85px;
@@ -489,7 +489,7 @@ option {
     transform: rotate(135deg);
 }
 
-.select_setting img {
+.select_courency img {
     width: 44px;
     vertical-align: middle;
     margin: 0;
@@ -502,7 +502,7 @@ option {
     object-fit: contain;
 }
 
-.need_more_btn p button {
+.more_btn p button {
     background: #fff;
     color: #0d75e5;
     border: none;
@@ -535,18 +535,18 @@ option {
     bottom: 0;
 }
 
-.need_more_btn {
+.more_btn {
     position: absolute;
     right: 0;
     margin: 11px 0 0;
 }
 
-.need_more_btn p {
+.more_btn p {
     color: #fff;
     font-size: 14px;
 }
 
-.need_more_btn p button {
+.more_btn p button {
     background: #fff;
     color: #0d75e5;
     border: none;
