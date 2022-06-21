@@ -289,7 +289,7 @@ option {
     max-width: 11.9%;
 }
 
-.amount_box input {
+.amount_tab input {
     height: 43px;
     padding: 0 14px;
     width: 100%;
@@ -395,7 +395,7 @@ option {
     max-width: 16.9%;
 }
 
-.amount_box p {
+.amount_tab p {
     margin: 0;
     color: #000;
     padding: 1px 4px 9px;
@@ -410,7 +410,7 @@ option {
     flex: 88%;
 }
 
-.amount_box input {
+.amount_tab input {
     height: 43px;
     padding: 0 14px;
     width: 100%;
